@@ -1,0 +1,273 @@
+[
+    {
+        "name": "Le Nuvole",
+        "description": "My very first Project. Front End responsive website for my brother's band.",
+        "languages": [
+            {
+                "language": "HTML5"
+            },
+            {
+                "language": "CSS3"
+            }
+        ],
+        "libraries": [
+            {
+                "library": "Bootstrap5"
+            }
+        ],
+        "stack": "HTML/CSS",
+        "imgReference": "le-nuvole",
+        "github": "https://github.com/francesco-saponaro/Le-nuvole-website",
+        "app": "https://francesco-saponaro.github.io/Le-nuvole-website/"
+    },
+    {
+        "name": "Ramen Locator",
+        "description": "Front End responsive Geolocator application built with HTML5, CSS3, JavaScript and Google Maps API.",
+        "languages": [
+            {
+                "language": "HTML5"
+            },
+            {
+                "language": "CSS3"
+            },
+            {
+                "language": "JavaScript"
+            }
+        ],
+        "other": [
+            {
+                "item": "CSS Grid"
+            },
+            {
+                "item": "CSS Flexbox"
+            },
+            {
+                "item": "Google Maps API"
+            },
+            {
+                "item": "EmailJS API"
+            }
+        ],
+        "stack": "Frontend",
+        "imgReference": "ramen-locator",
+        "github": "https://github.com/francesco-saponaro/ramen-locator",
+        "app": "https://francesco-saponaro.github.io/ramen-locator/"
+    },
+    {
+        "name": "Recipe Cookbook",
+        "description": "“Recipe Cookbook” is a Full Stack application built with HTML5, CSS3, Materialize, Python, Flask, JavaScript, MongoDB and AmCharts. \n It covers basic CRUD operations, along with plenty other features including: searching a recipe by its name or ingredient keyword, filtering by a selection of criteria including multiple allergens and dietary requirements, a profile page containing your recipes and favourite recipes, pagination, statistic charts and other social media type features including, a like and unlike button, comments and the functionality to delete them. \n If you would like to test run this app you can use the following account which has plenty of recipes and history in its name: \n Username: marie \n Password: marie",
+        "languages": [
+            {
+                "language": "HTML5"
+            },
+            {
+                "language": "CSS3"
+            },
+            {
+                "language": "JavaScript"
+            },
+            {
+                "language": "Python"
+            }
+        ],
+        "frameworks": [
+            {
+                "framework": "Flask"
+            }
+        ],
+        "database": "MongoDB",
+        "libraries": [
+            {
+                "library": "Materialize"
+            },
+            {
+                "library": "AmCharts"
+            }
+        ],
+        "stack": "Flask",
+        "imgReference": "recipe-cookbook",
+        "github": "https://github.com/francesco-saponaro/recipe-cookbook",
+        "app": "https://recipe-cookbook-fran.herokuapp.com/"
+    },
+    {
+        "name": "Crypthome",
+        "description": "This is a two-part Full Stack application, first being a demo Crypto-trading platform and second a Crypto merchandise e-commerce store. \n This project demonstrates my knowledge in HTML, CSS, Bootstrap5, Javascript, JQuery, Python, Django, SQLite3, PostgreSQL, AmChart, Celery, Django Channels, Redis, Daphne, Github and Heroku. \n It involves basic buying and selling of Cryptocurrencies - a Portfolio page with a statistic chart breakdown of your allocations and an open positions table - Periodic Cryptocurrencies price updates with Celery, Django Channels and Redis - Real payment infrastructure for merchandise with Stripe - CRUD operations. \n It has been a very challenging project, particularly the deployment for Celery with which I got stuck for a good few days. But in the end, as is usually the case when coding,  the emotional reward for finding a solution far outweighed the struggle. \n If you would like to test run this app the user below has plenty of history in its name: \n Username: fran \n Password: codeinstitute",
+        "languages": [
+            {
+                "language": "HTML5"
+            },
+            {
+                "language": "CSS3"
+            },
+            {
+                "language": "JavaScript"
+            },
+            {
+                "language": "Python"
+            }
+        ],
+        "frameworks": [
+            {
+                "framework": "Django"
+            }
+        ],
+        "database": "PostgreSQL",
+        "libraries": [
+            {
+                "library": "JQuery"
+            },
+            {
+                "library": "Bootstrap5"
+            },
+            {
+                "library": "AmCharts"
+            }
+        ],
+        "other": [
+            {
+                "item": "Celery"
+            },
+            {
+                "item": "Django Channels"
+            },
+            {
+                "item": "Redis"
+            },
+            {
+                "item": "Stripe"
+            }
+        ],
+        "stack": "Django",
+        "imgReference": "crypthome",
+        "github": "https://github.com/francesco-saponaro/crypthome",
+        "app": "https://crypthome.herokuapp.com/"
+    },
+    {
+        "name": "Kanpai",
+        "description": "This is a practice application I have completed following the MERN Stack Full Ecommerce Site - Using React, Redux, Node.js Udemy course, in which I have learned the required MERN skills to build an E-commerce application. I have also took this opportunity to learn how to test the API/HTTP requests with Postman and to test MongoDB's CRUD operations with the Mocha test framework. \n If you would like to test run the website you can use this admin account: \n Username: admin \n Email:test2@test.com \n Password: 123456.",
+        "languages": [
+            {
+                "language": "HTML5"
+            },
+            {
+                "language": "CSS3"
+            },
+            {
+                "language": "JavaScript"
+            }
+        ],
+        "frameworks": [
+            {
+                "framework": "Express"
+            },
+            {
+                "framework": "Mocha"
+            }
+        ],
+        "database": "MongoDB",
+        "libraries": [
+            {
+                "library": "React"
+            },
+            {
+                "library": "Redux"
+            },
+            {
+                "library": "Bootstrap6"
+            },
+            {
+                "library": "Mongoose"
+            }
+        ],
+        "other": [
+            {
+                "item": "NodeJS"
+            },
+            {
+                "item": "Stripe"
+            }
+        ],
+        "stack": "MERN",
+        "imgReference": "kanpai",
+        "github": "https://github.com/francesco-saponaro/kanpai",
+        "app": "https://kanpai-whiskeys.herokuapp.com/"
+    },
+    {
+        "name": "Fran's first portfolio",
+        "description": "This is my first portfolio website. \n I have decided to implement a backend purely for practice purpose as I wanted to utilize my new MERN stack skills. \n I have used the backend to store my project details and the quiz game questions. \n I have also created admin functionality from which I can perform CRUD operations on both the projects and quiz section. \n I have tested the API and HTTP requests with both Postman and Mocha.",
+        "languages": [
+            {
+                "language": "HTML5"
+            },
+            {
+                "language": "CSS3"
+            },
+            {
+                "language": "JavaScript"
+            }
+        ],
+        "frameworks": [
+            {
+                "framework": "Express"
+            },
+            {
+                "framework": "Mocha"
+            }
+        ],
+        "database": "MongoDB",
+        "libraries": [
+            {
+                "library": "React"
+            },
+            {
+                "library": "Redux"
+            },
+            {
+                "library": "Bootstrap6"
+            },
+            {
+                "library": "Mongoose"
+            }
+        ],
+        "other": [
+            {
+                "item": "NodeJS"
+            }
+        ],
+        "stack": "MERN",
+        "imgReference": "first-portfolio",
+        "github": "https://github.com/francesco-saponaro/fran-portfolio",
+        "app": "https://fran-portfolio.herokuapp.com/"
+    },
+    {
+        "name": "Howdy",
+        "description": "This is a fullstack application built with React, ContextAPI and Firebase. \n The purpose of this application was both to further practice my React skills and create a catchy Frontend. \n For the above reasons I have used Firebase to implement the Backend which greatly reduced my workload, thanks to its extensive tools and rapid development and deployment process. \n Along with a clean interface, transitions and animations, the application includes authentication and social media features like emoticons, like/unlike messages, sending pictures and a list of online users. \n To manage the state, for such a small application, I have used Context API, since compared to Redux requires minimal setup and is a more light-weight solution for passing little data throughout the app.",
+        "languages": [
+            {
+                "language": "HTML5"
+            },
+            {
+                "language": "CSS3"
+            },
+            {
+                "language": "JavaScript"
+            }
+        ],
+        "database": "Firebase",
+        "libraries": [
+            {
+                "library": "React"
+            },
+            {
+                "library": "Context API"
+            },
+            {
+                "library": "Material UI"
+            }
+        ],
+        "stack": "React/Firebase",
+        "imgReference": "howdy",
+        "github": "https://github.com/francesco-saponaro/howdy-messenger",
+        "app": "https://messenger-app-faaff.web.app/"
+    }
+]

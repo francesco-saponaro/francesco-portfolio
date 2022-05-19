@@ -1,0 +1,24 @@
+// Header
+.header__container {
+    border: 1px solid var(--secondary-color);
+    padding: 2rem;
+    margin: 0 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    opacity: 0;
+
+    .header__title {
+        font-family: var(--secondary-font);
+        font-size: 6vw;
+        letter-spacing: 1px;
+    }
+
+    @media screen and (max-width:830px) {
+        padding: 2rem 1rem;
+    }
+
+    @media screen and (max-width:700px) {
+        padding: 1rem;
+    }
+}
+
