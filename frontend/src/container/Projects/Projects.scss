@@ -19,16 +19,8 @@
 
         opacity: 0;
 
-        @media screen and (max-width: 900px) {
-            font-size: 1.7vw;
-        }
-
         @media screen and (max-width: 800px) {
             width: 100%;
-        }
-
-        @media screen and (max-width: 460px) {
-            font-size: 2vw;
         }
     }
 
@@ -56,14 +48,6 @@
                 border-bottom: 1px solid var(--secondary-color);
 
                 opacity: 0;
-
-                @media screen and (max-width: 900px) {
-                    font-size: 1.7vw;
-                }
-
-                @media screen and (max-width: 460px) {
-                    font-size: 2vw;
-                }
             }
         }
 

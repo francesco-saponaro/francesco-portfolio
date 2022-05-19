@@ -13,7 +13,7 @@ const projects = require('./projects');
 require('dotenv').config({ path: 'backend/config/config.env' });
 // Connecting to database
 mongoose
-    .connect('mongodb+srv://fran:new-portfolio@new-portfolio.46ypb.mongodb.net/?retryWrites=true&w=majority')
+    .connect(process.env.DB_URI)
     .then(con => {console.log(`Database connected with HOST: ${con.connection.host}`)
 })
 

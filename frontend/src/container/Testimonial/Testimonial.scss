@@ -21,18 +21,15 @@
     width: 30vw;
     word-break: break-word;
 
+    @media screen and (max-width:500px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
     p {
         font-size: 0.8rem;
         font-weight: 300;
         letter-spacing: 1px;
-
-        @media screen and (max-width: 900px) {
-            font-size: 1.7vw;
-        }
-
-        @media screen and (max-width: 460px) {
-            font-size: 2vw;
-        }
     }
 
     .review__text {
@@ -47,6 +44,10 @@
         span {
             opacity: 0.5;
             font-style: normal;
+        }
+
+        @media screen and (max-width:500px) {
+            align-self: flex-start;
         }
     }
 
