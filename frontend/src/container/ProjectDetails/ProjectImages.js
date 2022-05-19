@@ -9,7 +9,7 @@ const ProjectImages = ({ imgReference }) => {
         {imgReference &&
             // Project images
             <div className={`project-page__images flex ${imgReference === 'ramen-locator' && 'flex-column'}`}>
-                <div className={`project-page__image ${imgReference === 'ramen-locator' ? 'width-height100' : 'width49'}`}>
+                <div className={`project-page__image ${imgReference === 'ramen-locator' ? 'width-height100 margin-bottom10' : 'width49'}`}>
                     <a href={`/projectImages/${imgReference}-first.png`} target='_blank'>
                         <img className='width-height100' 
                             src={`/projectImages/${imgReference}-first.png`} 
