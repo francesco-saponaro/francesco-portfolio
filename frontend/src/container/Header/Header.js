@@ -23,7 +23,7 @@ const Header = ({ homeRef }) => {
                 <span onMouseOver={() => cursorScale('6')}
                       onMouseOut={() => cursorUnScale()}
                 >
-                    Junior <span className='purple-color'>FullStack</span> & <span className='purple-color'>Frontend</span>  Developer
+                    Junior <span className='purple-color header__title-stack'>FullStack</span> & <span className='purple-color header__title-stack'>Frontend</span>  Developer
                 </span>
             </p>
         </motion.div>

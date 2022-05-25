@@ -133,6 +133,11 @@
             width: 80%;
            
         }
+
+        @media screen and (max-width: 600px) {
+            width: 90%;
+           
+        }
     
         .project-page__images-image {
             width: 100%;
