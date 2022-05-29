@@ -30,7 +30,11 @@ const smallInfoAnimationParams = {
 const ProjectSideMenu = ({ menuToggle, 
                            setMenuToggle, 
                            smallInfoToggle, 
-                           setSmallInfoToggle }) => {
+                           setSmallInfoToggle,
+                           projectsToggle,
+                           setProjectsToggle,
+                           projects,
+                           loading }) => {
                         
     return (
         //Side menu - visible on medium screens
@@ -38,15 +42,31 @@ const ProjectSideMenu = ({ menuToggle,
         <AnimatePresence>
         {menuToggle && 
             <motion.div className='navbar__slider' {...animationParams}>
-                <AnimatePresence>
                 {/* Menu info links */}
-                {smallInfoToggle && 
-                <motion.ul className='navbar__slider--info-ul flex-around ul-text' {...smallInfoAnimationParams}>
-                    <li className='rotate'><a href='https://github.com/francesco-saponaro' target='blank'>Github</a></li>
-                    <li className='rotate'><a href='https://www.linkedin.com/in/francesco-saponaro87/' target='blank'>Linkedin</a></li>
-                    <li className='rotate'><a href={images.CV} target='blank'>CV</a></li>
-                </motion.ul>
-                }
+                <AnimatePresence>
+                    {smallInfoToggle && 
+                    <motion.ul className='navbar__slider--info-ul flex-around ul-text' {...smallInfoAnimationParams}>
+                        <li className='rotate'><a href='https://github.com/francesco-saponaro' target='blank'>Github</a></li>
+                        <li className='rotate'><a href='https://www.linkedin.com/in/francesco-saponaro87/' target='blank'>Linkedin</a></li>
+                        <li className='rotate'><a href={images.CV} target='blank'>CV</a></li>
+                    </motion.ul>
+                    }
+                </AnimatePresence>
+
+                {/* Projects nav */}
+                <AnimatePresence>
+                    {projectsToggle && 
+                    <motion.ul className='navbar__slider--projects-ul flex-around ul-text' {...smallInfoAnimationParams}>
+                        {!loading && projects && projects.map(project => (
+                            <li key={project._id}>
+                                <Link to={`/project/${project._id}`}>
+                                    {project?.name}
+                                </Link>
+                            </li>
+                            )
+                        )}
+                    </motion.ul>
+                    }
                 </AnimatePresence>
 
                 {/* Side menu links */}
@@ -56,6 +76,16 @@ const ProjectSideMenu = ({ menuToggle,
                         <Link to='/'>Home</Link>
                     </li>
 
+                    {/* Projects list toggler */}
+                    <li className='flex'
+                        onClick={() => setProjectsToggle(prevToggle => !prevToggle)}
+                    >
+                        Projects
+                        <div className='navbar__slider-caret flex'>
+                            <img src={images.dropdownCaretBlack} alt='down-caret' />
+                        </div>
+                    </li>
+
                     {/* Info toggler */}
                     <li onClick={() => setSmallInfoToggle(prevToggle => !prevToggle)}>
                         Info
@@ -63,7 +93,8 @@ const ProjectSideMenu = ({ menuToggle,
 
                     {/* Contact link */}
                     <li onClick={()=> {setMenuToggle(false);
-                                       setSmallInfoToggle(false)}}>
+                                       setSmallInfoToggle(false);
+                                       setProjectsToggle(false)}}>
                         <a href='mailto:francescosaponaro5@gmail.com'>
                             Contact
                         </a>
@@ -73,7 +104,8 @@ const ProjectSideMenu = ({ menuToggle,
                 {/* Toggle close icon  */}
                 <div className='navbar__slider--close-icon' 
                         onClick={() => {setMenuToggle(false);
-                                        setSmallInfoToggle(false)}}
+                                        setSmallInfoToggle(false);
+                                        setProjectsToggle(false)}}
                         onMouseOver={() => cursorScale('4')}
                         onMouseOut={() => cursorUnScale()}
                 >

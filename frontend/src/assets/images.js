@@ -3,6 +3,8 @@ import menuIconBlack from './menu-black.png';
 import menuIconWhite from './menu-white.png';
 import close from './close.png';
 import arrow from './arrow.svg';
+import dropdownCaret from './dropdown-caret.png';
+import dropdownCaretBlack from './dropdown-caret-black.png';
 import apostropheLeft from './apostrophe-left.svg'
 import apostropheRight from './apostrophe-right.svg'
 import sectionArrow from './section-arrow.png'
@@ -18,6 +20,8 @@ export default { profilePic,
                  menuIconWhite, 
                  close,
                  arrow,
+                 dropdownCaret,
+                 dropdownCaretBlack,
                  apostropheLeft,
                  apostropheRight,
                  reactLogo, 

@@ -117,6 +117,16 @@ nav {
                 }
             }
 
+            .navbar__links-caret {
+                width: 15px;
+                height: 15px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
             @media screen and (max-width: 900px) {
                 display: none;
             }
@@ -139,6 +149,40 @@ nav {
         }
     }
 
+    // Info nav
+    .navbar__info-container {
+        height: 40px;
+
+        box-shadow: 0 10px 20px rgba(168, 168, 168, 0.40);
+
+        .navbar__info {
+            background: var(--purple-color);
+            border-radius: 4px;
+        }
+
+        .navbar__projects {
+            background: var(--secondary-color);
+            border-radius: 4px;
+            border: 1px solid var(--primary-color);
+
+            li {
+                color: var(--primary-color);
+        
+                &:before {
+                    background: var(--primary-color);
+                }
+
+                a {
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        @media screen and (max-width: 901px) {
+            display: none;
+        }
+    }
+
     // Navbar side menu
     .navbar__slider {
         position: fixed;
@@ -152,10 +196,7 @@ nav {
         align-items: flex-end;
 
         height: 100vh;
-
-        .home-active, .projects-active, .testimonials-active {
-            border-top: 2px solid var(--primary-color);
-        }
+        width: 80vw;
 
         // Navbar slider main ul
         .navbar__slider--main-ul {
@@ -164,10 +205,11 @@ nav {
             align-items: flex-start;
             flex-direction: column;
 
+            width: 55%;
+
             padding: 4rem 2rem;
 
             background-color: var(--third-color);
-            box-shadow: 0 10px 20px rgba(168, 168, 168, 0.40);
 
             li {
                 font-size: 3.8vw;
@@ -178,6 +220,21 @@ nav {
                 color: var(--primary-color);
             
                 animation: spacing .3s .7s forwards;
+
+                .navbar__slider-caret {
+                    width: 4vw;
+                    height: 4vw;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        width: 5.5vw;
+                        height: 5.5vw;
+                    }
+                }
 
                 @keyframes spacing {
                     from {
@@ -226,9 +283,37 @@ nav {
             flex-direction: column;
 
             height: 100%;
+            width: 15%;
 
             background: var(--purple-color);
             box-shadow: 0 10px 20px rgba(168, 168, 168, 0.40);
+        }
+
+        // Navbar slider projects ul
+        .navbar__slider--projects-ul {
+            flex-direction: column;
+
+            height: 100%;
+            width: 30%;
+            padding: 0 10px;
+
+            border-left: 1px solid var(--primary-color);
+            border-right: 1px solid var(--primary-color);
+
+            background: var(--third-color);
+            box-shadow: 0 10px 20px rgba(168, 168, 168, 0.40);
+
+            li {    
+                text-align: center;
+
+                &:before {
+                    background: var(--primary-color);
+                }
+
+                a {
+                    color: var(--primary-color);
+                }
+            }
         }
 
         // Navbar slider close button
@@ -248,22 +333,6 @@ nav {
             display: none;
         }
     }
-
-    // Info nav
-    .navbar__info-container {
-        height: 40px;
-
-        box-shadow: 0 10px 20px rgba(168, 168, 168, 0.40);
-
-        .navbar__info {
-            background: var(--purple-color);
-            border-radius: 4px;
-        }
-
-        @media screen and (max-width: 901px) {
-            display: none;
-        }
-    }
 }
 
 // Scrolled navbar styles
@@ -277,6 +346,12 @@ nav {
 
         &:before {
             background: var(--primary-color);
+        }
+    }
+
+    .navbar__links-caret {
+        img {
+            content:url('../../assets/dropdown-caret-black.png');
         }
     }
 

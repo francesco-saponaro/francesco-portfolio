@@ -29,8 +29,6 @@ const HomeNavbar = ({ homeRef, projectsRef, testimonialsRef, introDisplay }) => 
     const [smallInfoToggle, setSmallInfoToggle] = useState(false);
     const [activeSection, setActiveSection] = useState('home-active');
 
-    console.log(activeSection)
-
     // Function setting scroll position state (needed for navbar color style changes)
     CheckScrollPosition(setScrollPosition)
 

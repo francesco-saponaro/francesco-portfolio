@@ -22,7 +22,11 @@ const largeInfoAnimationParams = {
 const ProjectMainNav = ({ scrollPosition, 
                           setMenuToggle, 
                           largeInfoToggle,
-                          setLargeInfoToggle }) => {
+                          setLargeInfoToggle,
+                          projectsToggle,
+                          setProjectsToggle,
+                          projects,
+                          loading }) => {
     
     return (
         <>
@@ -41,6 +45,16 @@ const ProjectMainNav = ({ scrollPosition,
                 {/* Section links */}
                 <li>
                     <Link to='/'>Home</Link>
+                </li>
+
+                {/* Projects list toggler */}
+                <li className='flex'
+                    onClick={() => setProjectsToggle(prevToggle => !prevToggle)}
+                >
+                    Projects
+                    <div className='navbar__links-caret flex'>
+                        <img src={images.dropdownCaret} alt='down-caret' />
+                    </div>
                 </li>
 
                 {/* Info toggler */}
@@ -69,17 +83,35 @@ const ProjectMainNav = ({ scrollPosition,
             </div>
         </div>
 
+        {/* Projects nav */}
+        <AnimatePresence>
+            {projectsToggle && 
+            <motion.div className='navbar__info-container' {...largeInfoAnimationParams}>
+                <ul className='navbar__projects width-height100 flex-around ul-text'>
+                    {!loading && projects && projects.map(project => (
+                        <li key={project._id}>
+                            <Link to={`/project/${project._id}`}>
+                                {project?.name}
+                            </Link>
+                        </li>
+                        )
+                    )}
+                </ul>
+            </motion.div>
+            }
+        </AnimatePresence>
+
         {/* Info nav */}
         <AnimatePresence>
-        {largeInfoToggle && 
-        <motion.div className='navbar__info-container' {...largeInfoAnimationParams}>
-            <ul className='navbar__info width-height100 flex-around ul-text'>
-                <li><a href='https://github.com/francesco-saponaro' target='blank'>Github</a></li>
-                <li><a href='https://www.linkedin.com/in/francesco-saponaro87/' target='blank'>Linkedin</a></li>
-                <li><a href={images.CV} target='blank'>CV</a></li>
-            </ul>
-        </motion.div>
-        }
+            {largeInfoToggle && 
+            <motion.div className='navbar__info-container' {...largeInfoAnimationParams}>
+                <ul className='navbar__info width-height100 flex-around ul-text'>
+                    <li><a href='https://github.com/francesco-saponaro' target='blank'>Github</a></li>
+                    <li><a href='https://www.linkedin.com/in/francesco-saponaro87/' target='blank'>Linkedin</a></li>
+                    <li><a href={images.CV} target='blank'>CV</a></li>
+                </ul>
+            </motion.div>
+            }
         </AnimatePresence>
         </>
     )
