@@ -46,7 +46,7 @@ const SideMenu = ({ menuToggle,
                 <AnimatePresence>
                 {/* Menu info links */}
                 {smallInfoToggle && 
-                <motion.ul className='navbar__slider--info-ul flex-around ul-text' {...smallInfoAnimationParams}>
+                <motion.ul className='navbar__slider--info-ul width-auto flex-around ul-text' {...smallInfoAnimationParams}>
                     <li className='rotate'><a href='https://github.com/francesco-saponaro' target='blank'>Github</a></li>
                     <li className='rotate'><a href='https://www.linkedin.com/in/francesco-saponaro87/' target='blank'>Linkedin</a></li>
                     <li className='rotate'><a href={images.CV} target='blank'>CV</a></li>
@@ -55,7 +55,7 @@ const SideMenu = ({ menuToggle,
                 </AnimatePresence>
 
                 {/* Side menu links */}
-                <ul className='navbar__slider--main-ul width-height100'>
+                <ul className='navbar__slider--main-ul width-auto width-height100'>
                     {/* Section links */}
                     <li className={activeSection?.includes('home') ? activeSection  : 'false'} 
                         onClick={() => {ScrollToSectionAndActive({block:'end'}, 'home', homeRef, setActiveSection);
