@@ -55,6 +55,9 @@ const projectsSchema = new mongoose.Schema({
     },
     app: {
         type: String
+    },
+    order: {
+        type: Number
     }
 });
 

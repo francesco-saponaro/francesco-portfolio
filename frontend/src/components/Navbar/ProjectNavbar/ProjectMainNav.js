@@ -95,7 +95,7 @@ const ProjectMainNav = ({ scrollPosition,
                             </Link>
                         </li>
                         )
-                    )}
+                    ).reverse()}
                 </ul>
             </motion.div>
             }

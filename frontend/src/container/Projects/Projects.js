@@ -66,7 +66,7 @@ const Projects = ({ projectsRef }) => {
                             </motion.p>
                             <p>{project.stack}</p>
                         </motion.div>
-                    )).reverse()}
+                    ))}
                 </div>
 
                 {/* Selected project image */}

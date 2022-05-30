@@ -7,6 +7,7 @@ const Project = require('../models/project');
 router.get('/projects', (req, res) => {
     Project
         .find()
+        .sort({order: 1})
         .then(projects => res.json({
             success: true,
             projects

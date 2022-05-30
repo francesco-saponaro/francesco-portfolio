@@ -18,7 +18,8 @@
         "stack": "HTML/CSS",
         "imgReference": "le-nuvole",
         "github": "https://github.com/francesco-saponaro/Le-nuvole-website",
-        "app": "https://francesco-saponaro.github.io/Le-nuvole-website/"
+        "app": "https://francesco-saponaro.github.io/Le-nuvole-website/",
+        "order": 7
     },
     {
         "name": "Ramen Locator",
@@ -51,7 +52,8 @@
         "stack": "Frontend",
         "imgReference": "ramen-locator",
         "github": "https://github.com/francesco-saponaro/ramen-locator",
-        "app": "https://francesco-saponaro.github.io/ramen-locator/"
+        "app": "https://francesco-saponaro.github.io/ramen-locator/",
+        "order": 6
     },
     {
         "name": "Recipe Cookbook",
@@ -87,7 +89,8 @@
         "stack": "Flask",
         "imgReference": "recipe-cookbook",
         "github": "https://github.com/francesco-saponaro/recipe-cookbook",
-        "app": "https://recipe-cookbook-fran.herokuapp.com/"
+        "app": "https://recipe-cookbook-fran.herokuapp.com/",
+        "order": 5
     },
     {
         "name": "Crypthome",
@@ -140,7 +143,8 @@
         "stack": "Django",
         "imgReference": "crypthome",
         "github": "https://github.com/francesco-saponaro/crypthome",
-        "app": "https://crypthome.herokuapp.com/"
+        "app": "https://crypthome.herokuapp.com/",
+        "order": 4
     },
     {
         "name": "Kanpai",
@@ -190,7 +194,8 @@
         "stack": "MERN",
         "imgReference": "kanpai",
         "github": "https://github.com/francesco-saponaro/kanpai",
-        "app": "https://kanpai-whiskeys.herokuapp.com/"
+        "app": "https://kanpai-whiskeys.herokuapp.com/",
+        "order": 3
     },
     {
         "name": "Fran's first portfolio",
@@ -237,7 +242,8 @@
         "stack": "MERN",
         "imgReference": "first-portfolio",
         "github": "https://github.com/francesco-saponaro/fran-portfolio",
-        "app": "https://fran-portfolio.herokuapp.com/"
+        "app": "https://fran-portfolio.herokuapp.com/",
+        "order": 2
     },
     {
         "name": "Howdy",
@@ -268,6 +274,7 @@
         "stack": "React/Firebase",
         "imgReference": "howdy",
         "github": "https://github.com/francesco-saponaro/howdy-messenger",
-        "app": "https://messenger-app-faaff.web.app/"
+        "app": "https://messenger-app-faaff.web.app/",
+        "order": 1
     }
 ]
