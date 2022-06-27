@@ -48,6 +48,10 @@
                 border-bottom: 1px solid var(--secondary-color);
 
                 opacity: 0;
+
+                .project__name a {
+                    cursor: pointer;
+                }
             }
         }
 

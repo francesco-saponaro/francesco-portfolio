@@ -55,6 +55,10 @@ nav {
         .navbar__links {
             flex: 1.3;
 
+            li {
+                cursor: pointer;
+            }
+
             li:not(:last-child) {
                 margin-right: 3rem;
             }
@@ -158,6 +162,10 @@ nav {
         .navbar__info {
             background: var(--purple-color);
             border-radius: 4px;
+
+            li a {
+                cursor: pointer;
+            }
         }
 
         .navbar__projects {
@@ -174,6 +182,7 @@ nav {
 
                 a {
                     color: var(--primary-color);
+                    cursor: pointer;
                 }
             }
         }
