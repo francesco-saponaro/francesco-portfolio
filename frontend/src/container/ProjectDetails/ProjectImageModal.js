@@ -14,7 +14,7 @@ const animationParams = {
 }
 
 // Image Modal component
-const Modal = ({ modalRef, openImage, imgReference }) => {
+const Modal = ({ modalRef, openImage }) => {
     if(!openImage[0]) return null
 
     return ReactDom.createPortal(
@@ -27,7 +27,7 @@ const Modal = ({ modalRef, openImage, imgReference }) => {
             <div ref={modalRef} className='modal__overlay'></div>
             {/* Modal image */}
             <div className='modal'>
-                <img className="project-page__images-image" src={`/projectImages/${imgReference}-${openImage[1]}.png`}/>
+                <img className="project-page__images-image" src={openImage[1]}/>
             </div>
         </motion.div>
         </AnimatePresence>

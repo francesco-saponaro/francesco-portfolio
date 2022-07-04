@@ -10,23 +10,104 @@
 
     .project-page__images {
         flex: 1.3;
-        justify-content: space-between;
 
-        width: 100%;
+        .project-page__image-slider {
+            position: relative;
 
-        .project-page__image {
-            height: 100%;
+            width: 100%;
 
             img {
                 object-fit: contain;
                 cursor: pointer;
             }
 
-            @media screen and (max-width: 600px) {
-                width: 100%;
-                height: 80vw;
+            .project-page__image-slider_toggler {
+                position: absolute;
+                top: 48%;
 
-                margin-bottom: 10px;
+                width:3vw;
+
+                cursor: pointer;
+
+                transition: transform 0.2s ease;
+
+
+                &:hover {
+                    transform: scale(1.2)
+                }
+
+                img {
+                    width: 100%;
+                }
+                
+
+                @media screen and (max-width: 900px) {
+                    width: 4vw;   
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 5vw;   
+                }
+            }
+
+            .project-page__image-slider_next {
+                right:35px;
+
+                @media screen and (max-width: 600px) {
+                    right: 25px; 
+                }
+            }
+
+            .project-page__image-slider_prev {
+                left:35px;
+
+                @media screen and (max-width: 600px) {
+                    left: 25px; 
+                }
+            }
+
+            .project-page__image-slider_navigator {
+                position: absolute;
+                bottom: 20px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: inherit;
+
+                @media screen and (max-width: 700px) {
+                    bottom: -25px;   
+                }
+
+                .project-page__image-slider_navigate {
+                    width:15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    margin: 0 5px;
+
+                    cursor: pointer;
+
+                    transition: transform 0.2s ease;
+
+
+                    &:hover {
+                        transform: scale(1.5)
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        width:12px;
+                        height: 12px;   
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        width:10px;
+                        height: 10px;   
+                    }
+                }
+
+                .navigate_active {
+                    background-color: var(--purple-color)!important;
+                }
             }
         }
 
@@ -36,10 +117,12 @@
             padding-bottom: 40px;
         }
 
+        @media screen and (max-width: 700px) {
+            padding-bottom: 50px;
+        }
+
         @media screen and (max-width: 600px) {
             flex-direction: column;
-
-            padding-bottom: 30px;
         }
     }
 
@@ -83,6 +166,7 @@
 
                 a {
                     border-bottom: 1px solid var(--secondary-color);
+                    cursor: pointer;
                 }
             }
         }
@@ -127,7 +211,8 @@
 
     .modal {
         position: absolute;
-        width: 43%;
+        max-width: 1300px;
+        width: 70%;
       
 
         @media screen and (max-width: 1000px) {
@@ -135,9 +220,8 @@
            
         }
 
-        @media screen and (max-width: 600px) {
-            width: 90%;
-           
+        @media screen and (max-width: 900px) {
+            width: 95%; 
         }
     
         .project-page__images-image {
@@ -146,4 +230,21 @@
         }
     }
 
+}
+
+.le-nuvole, .recipe-cookbook, .kanpai, .first-portfolio, .howdy {
+    background-color: #3e3232;
+
+    @media screen and (max-width: 700px) {
+        background-color: var(--secondary-color);
+    }
+}
+.le-nuvole-toggler, .recipe-cookbook-toggler, .kanpai-toggler, .first-portfolio-toggler, .howdy-toggler {
+    filter: invert(10%) sepia(6%) saturate(2979%) hue-rotate(323deg) brightness(89%) contrast(71%);
+}
+.ramen-locator, .crypthome {
+    background-color: var(--secondary-color);
+}
+.ramen-locator-toggler, .crypthome-toggler {
+    filter: invert(80%) sepia(1%) saturate(117%) hue-rotate(315deg) brightness(103%) contrast(92%);
 }

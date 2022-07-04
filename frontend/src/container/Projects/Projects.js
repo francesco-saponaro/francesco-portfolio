@@ -7,6 +7,7 @@ import { getProjectsAction, clearErrors } from '../../actions'
 
 // Styles and images imports
 import './Projects.scss'
+import projectPics from '../../projectPics/projectPics'
 import { motion } from 'framer-motion';
 
 // Framer motion animation params
@@ -55,7 +56,7 @@ const Projects = ({ projectsRef }) => {
                             <motion.p whileHover={{ x: 20, color:'#ccc' }}
                                     transition={{ type: 'sween' }}
                                     className='project__name flex-start width-height100'
-                                    onMouseOver={() => setImage(`projectImages/${project.imgReference}-main.png`)}
+                                    onMouseOver={() => setImage(Object.values(projectPics).filter(item => item.includes(project.imgReference))[0])}
                                     onMouseOut={() => setImage('')}
                             >
                                 <Link to={`/project/${project._id}`} 
