@@ -45,8 +45,12 @@
                     width: 4vw;   
                 }
 
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 750px) {
                     width: 5vw;   
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 7vw;   
                 }
             }
 
